@@ -5,13 +5,26 @@ SidecarHost:
   required: true
   attributes:
     defaultValue: "http://0.0.0.0"
+SidecarPort:
+  displayName: Sidecar port
+  kind: number
+  description: "Sidecar port"
+  required: true
+  attributes:
+    defaultValue: 1337
 SidecarName:
   displayName:  Sidecar container name
   kind: string
   description: "Sidecar container name"
-  required: false
+  required: true
   attributes:
     defaultValue: "sidecar"
+SidecarImage:
+  displayName: Sidecar image
+  kind: number
+  description: "Sidecar image"
+  required: true
+  attributes:
 MaxWorkers:
   displayName: Number of workers
   kind: number
