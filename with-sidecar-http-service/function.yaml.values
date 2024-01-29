@@ -1,7 +1,17 @@
-SidecarHost: 0.0.0.0
-SidecarPort: 9000
-SidecarName: sidecar
-
+SidecarHost:
+  displayName: Sidecar host
+  kind: string
+  description: "Sidecar host url"
+  required: true
+  attributes:
+    defaultValue: "http://0.0.0.0"
+SidecarName:
+  displayName:  Sidecar container name
+  kind: string
+  description: "Sidecar container name"
+  required: false
+  attributes:
+    defaultValue: "sidecar"
 MaxWorkers:
   displayName: Number of workers
   kind: number
