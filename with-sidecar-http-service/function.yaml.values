@@ -21,7 +21,7 @@ SidecarName:
     defaultValue: "sidecar"
 SidecarImage:
   displayName: Sidecar image
-  kind: number
+  kind: string
   description: "Sidecar image"
   required: true
   attributes:
