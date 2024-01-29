@@ -25,6 +25,7 @@ SidecarImage:
   description: "Sidecar image"
   required: true
   attributes:
+    defaultValue: ""
 MaxWorkers:
   displayName: Number of workers
   kind: number
