@@ -1,0 +1,13 @@
+SidecarHost: 0.0.0.0
+SidecarPort: 9000
+SidecarName: sidecar
+
+MaxWorkers:
+  displayName: Number of workers
+  kind: number
+  description: "Number of requests to handle concurrently"
+  required: true
+  attributes:
+    defaultValue: 4
+    minValue: 1
+    maxValue: 10
