@@ -1,14 +1,14 @@
 apiVersion: "nuclio.io/v1beta1"
 kind: "NuclioFunction"
 metadata:
-  name: eventhub
+  name: event-hub
 spec:
   description: >
     An Azure Event Hub triggered function with a configuration that connects to an Azure Event Hub.
     The function reads messages from two partitions, process the messages, invokes another function,
     and sends the processed payload to another Azure Event Hub.
 
-  # Note that we're not specifying handler. This is because the Golang runtimg
+  # Note that we're not specifying handler. This is because the Golang runtime
   # can find handlers automatically.
   runtime: "golang"
   handler: main:SensorHandler
